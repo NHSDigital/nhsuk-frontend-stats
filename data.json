@@ -1,0 +1,25 @@
+{
+  "services": [
+    {
+      "name": "Manage vaccinations in schools",
+      "github": "https://github.com/nhsuk/manage-vaccinations-in-schools",
+      "nhsukFrontendVersion": "9.6.1"
+    },
+    {
+      "name": "NHS Digital service manual",
+      "github": "https://github.com/nhsuk/nhsuk-service-manual",
+      "nhsukFrontendVersion": "^9.6.3"
+    },
+    {
+      "name": "Manage breast screening",
+      "github": "https://github.com/NHSDigital/dtos-manage-breast-screening",
+      "nhsukFrontendVersion": "^9.6.2"
+    },
+    {
+      "name": "Cohort Manager",
+      "github": "https://github.com/NHSDigital/dtos-cohort-manager",
+      "packageLocation": "application/CohortManager/src/Web/",
+      "nhsukFrontendVersion": "^9.6.2"
+    }
+  ]
+}
