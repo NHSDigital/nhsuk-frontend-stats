@@ -2,6 +2,7 @@ require 'octokit'
 require 'uri'
 require 'json'
 require 'open-uri'
+require 'base64'
 
 client = Octokit::Client.new(:access_token => ENV.fetch('GITHUB_TOKEN'))
 
