@@ -20,6 +20,10 @@
       "github": "https://github.com/NHSDigital/dtos-cohort-manager",
       "packageLocation": "application/CohortManager/src/Web/",
       "nhsukFrontendVersion": "^10.0.0-internal.0"
+    },
+    {
+      "name": "PPS Help to Stay Healthy",
+      "github": "https://github.com/NHSDigital/pps-weight-management"
     }
   ]
 }
