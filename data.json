@@ -30,6 +30,10 @@
       "github": "https://github.com/NHSDigital/pps-weight-management",
       "nhsukFrontendVersion": "^10.1.0",
       "nhsFrontendVersionPackageLock": "10.1.0"
+    },
+    {
+      "name": "Vaccinations in the app",
+      "github": "https://github.com/NHSDigital/vaccinations-app"
     }
   ]
 }
