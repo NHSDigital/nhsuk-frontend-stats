@@ -30,6 +30,40 @@ data["services"].each do |service|
   rescue Octokit::NotFound
   rescue Octokit::SAMLProtected
   end
+
+  lock_path = service["packageLocation"].to_s + "package-lock.json"
+
+  begin
+    package_lock_json = JSON.parse(Base64.decode64(client.contents(repo, path: lock_path).content))
+
+    # npm v2/v3 lockfile format
+    if package_lock_json["packages"] && package_lock_json["packages"]["node_modules/nhsuk-frontend"]
+      service["nhsFrontendVersionPackageLock"] = package_lock_json["packages"]["node_modules/nhsuk-frontend"]["version"]
+    # npm v1 lockfile format
+    elsif package_lock_json["dependencies"] && package_lock_json["dependencies"]["nhsuk-frontend"]
+      service["nhsFrontendVersionPackageLock"] = package_lock_json["dependencies"]["nhsuk-frontend"]["version"]
+    end
+
+  rescue Octokit::NotFound
+    # Fall back to yarn.lock
+    yarn_lock_path = service["packageLocation"].to_s + "yarn.lock"
+
+    begin
+      yarn_lock = Base64.decode64(client.contents(repo, path: yarn_lock_path).content)
+
+      # Match a block starting with "nhsuk-frontend@..." and extract its resolved version
+      if yarn_lock =~ /^"?nhsuk-frontend@[^:]+:?\n(?:.*\n)*?\s+version[:\s]+"?([^\s"]+)"?/
+        service["nhsFrontendVersionPackageLock"] = $1
+      end
+
+    rescue Octokit::InvalidRepository
+    rescue Octokit::NotFound
+    rescue Octokit::SAMLProtected
+    end
+
+  rescue Octokit::InvalidRepository
+  rescue Octokit::SAMLProtected
+  end
 end
 
 # Update data file
@@ -57,16 +91,17 @@ File.open("README.md", 'w') do |file|
 
   file.write "The following table shows the current version of [NHSUK Frontend](https://github.com/nhsuk/nhsuk-frontend) used by different services.\n\n"
 
-  file.write "| Service | Frontend version |\n"
-  file.write "| :------ | -------------------: |\n"
+  file.write "| Service | Frontend version | Installed version |\n"
+  file.write "| :------ | -------------------: | -------------------: |\n"
 
   data["services"].each do |service|
 
     name = service["name"].to_s
     url = service["github"].to_s
     frontend_version = service["nhsukFrontendVersion"].to_s
+    installed_version = service["nhsFrontendVersionPackageLock"].to_s
 
-    file.write "| [#{name}](#{url}) | #{frontend_version} |\n"
+    file.write "| [#{name}](#{url}) | #{frontend_version} | #{installed_version} |\n"
   end
 
 end

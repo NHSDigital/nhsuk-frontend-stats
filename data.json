@@ -3,27 +3,33 @@
     {
       "name": "Manage vaccinations in schools",
       "github": "https://github.com/nhsuk/manage-vaccinations-in-schools",
-      "nhsukFrontendVersion": "^10.4.2"
+      "nhsukFrontendVersion": "^10.4.2",
+      "nhsFrontendVersionPackageLock": "10.4.2"
     },
     {
       "name": "NHS Digital service manual",
       "github": "https://github.com/nhsuk/nhsuk-service-manual",
-      "nhsukFrontendVersion": "^10.4.2"
+      "nhsukFrontendVersion": "^10.4.2",
+      "nhsFrontendVersionPackageLock": "10.4.2"
     },
     {
       "name": "Manage breast screening",
       "github": "https://github.com/NHSDigital/dtos-manage-breast-screening",
-      "nhsukFrontendVersion": "^10.4.2"
+      "nhsukFrontendVersion": "^10.4.2",
+      "nhsFrontendVersionPackageLock": "10.4.2"
     },
     {
       "name": "Cohort Manager",
       "github": "https://github.com/NHSDigital/dtos-cohort-manager",
       "packageLocation": "application/CohortManager/src/Web/",
-      "nhsukFrontendVersion": "^10.0.0-internal.0"
+      "nhsukFrontendVersion": "^10.0.0-internal.0",
+      "nhsFrontendVersionPackageLock": "10.0.0-internal.0"
     },
     {
       "name": "PPS Help to Stay Healthy",
-      "github": "https://github.com/NHSDigital/pps-weight-management"
+      "github": "https://github.com/NHSDigital/pps-weight-management",
+      "nhsukFrontendVersion": "^10.1.0",
+      "nhsFrontendVersionPackageLock": "10.1.0"
     }
   ]
 }
