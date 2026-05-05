@@ -33,7 +33,18 @@
     },
     {
       "name": "Vaccinations in the app",
-      "github": "https://github.com/NHSDigital/vaccinations-app"
+      "github": "https://github.com/NHSDigital/vaccinations-app",
+      "nhsukFrontendVersion": "^10.4.2",
+      "nhsukReactComponentsVersion": "^6.0.0",
+      "nhsFrontendVersionPackageLock": "10.4.2"
+    },
+    {
+      "name": "National document repository",
+      "github": "https://github.com/NHSDigital/national-document-repository",
+      "packageLocation": "app/",
+      "nhsukFrontendVersion": "^9.6.4",
+      "nhsukReactComponentsVersion": "^5.0.0",
+      "nhsFrontendVersionPackageLock": "9.6.4"
     }
   ]
 }
