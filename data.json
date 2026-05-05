@@ -23,7 +23,8 @@
     },
     {
       "name": "PPS Help to Stay Healthy",
-      "github": "https://github.com/NHSDigital/pps-weight-management"
+      "github": "https://github.com/NHSDigital/pps-weight-management",
+      "nhsukFrontendVersion": "^10.1.0"
     }
   ]
 }
