@@ -1,0 +1,14 @@
+{
+  "name": "nhsuk-frontend-stats",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "update": "node update.js"
+  },
+  "dependencies": {
+    "octokit": "^5.0.5"
+  }
+}
