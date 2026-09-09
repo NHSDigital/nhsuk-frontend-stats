@@ -48,12 +48,16 @@ for (const service of data.services) {
   try {
     const packageJson = JSON.parse(await getFileContent(owner, repo, `${packageLocation}package.json`));
 
-    if (packageJson.dependencies?.["nhsuk-frontend"]) {
-      service.nhsukFrontendVersion = packageJson.dependencies["nhsuk-frontend"];
+    const nhsukFrontendVersion =
+      packageJson.dependencies?.["nhsuk-frontend"] ?? packageJson.devDependencies?.["nhsuk-frontend"];
+    if (nhsukFrontendVersion) {
+      service.nhsukFrontendVersion = nhsukFrontendVersion;
     }
 
-    if (packageJson.dependencies?.["nhsuk-react-components"]) {
-      service.nhsukReactComponentsVersion = packageJson.dependencies["nhsuk-react-components"];
+    const nhsukReactComponentsVersion =
+      packageJson.dependencies?.["nhsuk-react-components"] ?? packageJson.devDependencies?.["nhsuk-react-components"];
+    if (nhsukReactComponentsVersion) {
+      service.nhsukReactComponentsVersion = nhsukReactComponentsVersion;
     }
   } catch (error) {
     // Ignore missing/inaccessible repos, same as the previous Ruby rescue blocks
@@ -76,8 +80,10 @@ for (const service of data.services) {
       try {
         const yarnLock = await getFileContent(owner, repo, `${packageLocation}yarn.lock`);
 
-        // Match a block starting with "nhsuk-frontend@..." and extract its resolved version
-        const match = yarnLock.match(/^"?nhsuk-frontend@[^:]+:?\n(?:.*\n)*?\s+version[:\s]+"?([^\s"]+)"?/m);
+        // Match a block starting with "nhsuk-frontend@..." and extract its resolved version.
+        // The lazy [^\n]+? (rather than [^:]+) is needed for Yarn Berry entries like
+        // "nhsuk-frontend@npm:^10.3.1":, where the npm: scope adds an extra colon before the end of the line.
+        const match = yarnLock.match(/^"?nhsuk-frontend@[^\n]+?:\n(?:.*\n)*?\s+version[:\s]+"?([^\s"]+)"?/m);
 
         if (match) {
           service.nhsFrontendVersionPackageLock = match[1];
