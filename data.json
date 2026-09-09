@@ -37,6 +37,18 @@
       "github": "https://github.com/NHSDigital/nhsuk-frontend-jinja",
       "nhsFrontendVersionPackageLock": "10.6.1",
       "nhsukFrontendVersion": "^10.6.1"
+    },
+    {
+      "name": "NHS App frontend",
+      "github": "https://github.com/nhsuk/nhsapp-frontend",
+      "nhsukFrontendVersion": "^10.5.2",
+      "nhsFrontendVersionPackageLock": "10.5.2"
+    },
+    {
+      "name": "NHS.UK Prototype kit package",
+      "github": "https://github.com/nhsuk/nhsuk-prototype-kit-package",
+      "nhsukFrontendVersion": "^10.6.1",
+      "nhsFrontendVersionPackageLock": "10.6.1"
     }
   ]
 }
