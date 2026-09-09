@@ -5,6 +5,11 @@
       "github": "https://github.com/nhsuk/nhsuk-service-manual",
       "nhsukFrontendVersion": "^10.6.1",
       "nhsFrontendVersionPackageLock": "10.6.1"
+    },
+    {
+      "name": "NHS Prototype kit docs",
+      "github": "https://github.com/nhsuk/nhsuk.service-manual.prototype-kit.docs",
+      "nhsFrontendVersionPackageLock": "10.4.2"
     }
   ]
 }
