@@ -49,6 +49,117 @@
       "github": "https://github.com/nhsuk/nhsuk-prototype-kit-package",
       "nhsukFrontendVersion": "^10.6.1",
       "nhsFrontendVersionPackageLock": "10.6.1"
+    },
+    {
+      "name": "NHSBSA Design System",
+      "github": "https://github.com/nhsbsa/design-system",
+      "nhsukFrontendVersion": "^3.1.0"
+    },
+    {
+      "name": "NHSBSA Frontend",
+      "github": "https://github.com/nhsbsa/nhsbsa-frontend",
+      "nhsukFrontendVersion": "^4.1.0"
+    },
+    {
+      "name": "NHSBSA Digital Playbook",
+      "github": "https://github.com/nhsbsa/nhsbsa-digital-playbook",
+      "nhsukFrontendVersion": "^8.3.0",
+      "nhsFrontendVersionPackageLock": "8.3.0"
+    },
+    {
+      "name": "Medical Examiner Service",
+      "github": "https://github.com/nhsbsa/medical-examiner-service",
+      "nhsukFrontendVersion": "^6.2.0",
+      "nhsFrontendVersionPackageLock": "6.2.0"
+    },
+    {
+      "name": "Apply for Healthy Start vouchers",
+      "github": "https://github.com/nhsbsa/apply-healthy-start-vouchers",
+      "nhsukFrontendVersion": "^10.4.2",
+      "nhsFrontendVersionPackageLock": "10.4.2"
+    },
+    {
+      "name": "Manage Healthy Start vouchers",
+      "github": "https://github.com/nhsbsa/manage-healthy-start-vouchers",
+      "nhsukFrontendVersion": "^7.0.0-alpha.2",
+      "nhsFrontendVersionPackageLock": "7.0.0-alpha.2"
+    },
+    {
+      "name": "Medical Certificate of Cause of Death",
+      "github": "https://github.com/nhsbsa/medical-certificate-of-cause-of-death",
+      "nhsukFrontendVersion": "^8.0.2",
+      "nhsFrontendVersionPackageLock": "8.0.2"
+    },
+    {
+      "name": "Help with Health Costs eligibility checker",
+      "github": "https://github.com/nhsbsa/hwhc-eligibility-checker",
+      "nhsukFrontendVersion": "^10.3.1",
+      "nhsFrontendVersionPackageLock": "10.3.1"
+    },
+    {
+      "name": "Help with Health Costs certificate manager",
+      "github": "https://github.com/nhsbsa/hwhc-certificate-manager",
+      "nhsukFrontendVersion": "^10.4.2",
+      "nhsFrontendVersionPackageLock": "10.4.2"
+    },
+    {
+      "name": "MYS Pharmacy",
+      "github": "https://github.com/nhsbsa/mys-pharmacy",
+      "nhsukFrontendVersion": "^10.4.2",
+      "nhsFrontendVersionPackageLock": "10.4.2"
+    },
+    {
+      "name": "MYS Admin",
+      "github": "https://github.com/nhsbsa/mys-admin",
+      "nhsukFrontendVersion": "^3.1.0"
+    },
+    {
+      "name": "HRT Prepayment Certificate",
+      "github": "https://github.com/nhsbsa/HRT-PPC",
+      "nhsukFrontendVersion": "^10.5.2",
+      "nhsFrontendVersionPackageLock": "10.6.0"
+    },
+    {
+      "name": "Contact the BSA",
+      "github": "https://github.com/nhsbsa/contact-the-bsa",
+      "nhsukFrontendVersion": "^10.5.2",
+      "nhsFrontendVersionPackageLock": "10.5.2"
+    },
+    {
+      "name": "Maternity Exemption (MatEx)",
+      "github": "https://github.com/nhsbsa/nhsuk-matex",
+      "nhsukFrontendVersion": "^10.3.1",
+      "nhsFrontendVersionPackageLock": "10.3.1"
+    },
+    {
+      "name": "Exemption Checker",
+      "github": "https://github.com/nhsbsa/exemption-checker",
+      "nhsukFrontendVersion": "^10.3.1",
+      "nhsFrontendVersionPackageLock": "10.3.1"
+    },
+    {
+      "name": "Additional Pensions Calculator",
+      "github": "https://github.com/nhsbsa/additional-pensions-calculator",
+      "nhsukFrontendVersion": "^10.4.2",
+      "nhsFrontendVersionPackageLock": "10.6.0"
+    },
+    {
+      "name": "Pensions Redundancy Calculator",
+      "github": "https://github.com/nhsbsa/pensions-redundancy-calculator",
+      "nhsukFrontendVersion": "^10.0.0",
+      "nhsFrontendVersionPackageLock": "10.0.0"
+    },
+    {
+      "name": "Employing Authority Search",
+      "github": "https://github.com/nhsbsa/Employing-Authority-Search",
+      "nhsukFrontendVersion": "^10.3.1",
+      "nhsFrontendVersionPackageLock": "10.4.2"
+    },
+    {
+      "name": "EHIC and GHIC",
+      "github": "https://github.com/nhsbsa/ehic-ghic",
+      "nhsukFrontendVersion": "^10.0.0",
+      "nhsFrontendVersionPackageLock": "10.0.0"
     }
   ]
 }
