@@ -8,19 +8,24 @@ on:
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v7
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          ruby-version: "3.2"
-          bundler-cache: true
+          node-version-file: "package.json"
+          cache: "npm"
+      - name: Install dependencies
+        run: npm ci
       - name: Run update
-        run: bundle exec ruby ./update.rb
+        run: npm run update
       - name: Commit and push any changes
         run: |
           git config --global user.email "updates@example.com"
