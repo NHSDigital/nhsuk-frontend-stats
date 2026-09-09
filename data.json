@@ -10,6 +10,33 @@
       "name": "NHS Prototype kit docs",
       "github": "https://github.com/nhsuk/nhsuk.service-manual.prototype-kit.docs",
       "nhsFrontendVersionPackageLock": "10.4.2"
+    },
+    {
+      "name": "NHS Notify Web CMS",
+      "github": "https://github.com/NHSDigital/nhs-notify-web-cms",
+      "packageLocation": "docs/",
+      "nhsukFrontendVersion": "^10.1.0",
+      "nhsFrontendVersionPackageLock": "10.1.0"
+    },
+    {
+      "name": "CDP Portal",
+      "github": "https://github.com/NHSDigital/cdp-portal",
+      "packageLocation": "portal/",
+      "nhsukFrontendVersion": "^8.1.1",
+      "nhsukReactComponentsVersion": "^2.2.1",
+      "nhsFrontendVersionPackageLock": "8.1.1"
+    },
+    {
+      "name": "NHS.UK React components",
+      "github": "https://github.com/NHSDigital/nhsuk-react-components",
+      "nhsukFrontendVersion": "^10.3.1",
+      "nhsFrontendVersionPackageLock": "10.3.1"
+    },
+    {
+      "name": "NHS.UK Frontend Jinja",
+      "github": "https://github.com/NHSDigital/nhsuk-frontend-jinja",
+      "nhsFrontendVersionPackageLock": "10.6.1",
+      "nhsukFrontendVersion": "^10.6.1"
     }
   ]
 }
