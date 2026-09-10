@@ -99,8 +99,8 @@
     {
       "name": "Help with Health Costs certificate manager",
       "github": "https://github.com/nhsbsa/hwhc-certificate-manager",
-      "nhsukFrontendVersion": "^10.4.2",
-      "nhsFrontendVersionPackageLock": "10.4.2"
+      "nhsukFrontendVersion": "^10.6.0",
+      "nhsFrontendVersionPackageLock": "10.6.1"
     },
     {
       "name": "MYS Pharmacy",

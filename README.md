@@ -13,12 +13,12 @@ The following table shows the current version of [NHSUK Frontend](https://github
 | [NHS Digital service manual](https://github.com/nhsuk/nhsuk-service-manual) | ^10.6.1 | 10.6.1 |
 | [NHS.UK Frontend Jinja](https://github.com/NHSDigital/nhsuk-frontend-jinja) | ^10.6.1 | 10.6.1 |
 | [NHS.UK Prototype kit package](https://github.com/nhsuk/nhsuk-prototype-kit-package) | ^10.6.1 | 10.6.1 |
+| [Help with Health Costs certificate manager](https://github.com/nhsbsa/hwhc-certificate-manager) | ^10.6.0 | 10.6.1 |
 | [Contact the BSA](https://github.com/nhsbsa/contact-the-bsa) | ^10.5.2 | 10.5.2 |
 | [HRT Prepayment Certificate](https://github.com/nhsbsa/HRT-PPC) | ^10.5.2 | 10.6.0 |
 | [NHS App frontend](https://github.com/nhsuk/nhsapp-frontend) | ^10.5.2 | 10.5.2 |
 | [Additional Pensions Calculator](https://github.com/nhsbsa/additional-pensions-calculator) | ^10.4.2 | 10.6.0 |
 | [Apply for Healthy Start vouchers](https://github.com/nhsbsa/apply-healthy-start-vouchers) | ^10.4.2 | 10.4.2 |
-| [Help with Health Costs certificate manager](https://github.com/nhsbsa/hwhc-certificate-manager) | ^10.4.2 | 10.4.2 |
 | [MYS Pharmacy](https://github.com/nhsbsa/mys-pharmacy) | ^10.4.2 | 10.4.2 |
 | [Employing Authority Search](https://github.com/nhsbsa/Employing-Authority-Search) | ^10.3.1 | 10.4.2 |
 | [Exemption Checker](https://github.com/nhsbsa/exemption-checker) | ^10.3.1 | 10.3.1 |
